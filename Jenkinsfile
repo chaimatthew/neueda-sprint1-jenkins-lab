@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/chaimatthew/neueda-sprint1-jenkins-lab.git'
+                git branch: 'main',
+ 		    url: 'https://github.com/chaimatthew/neueda-sprint1-jenkins-lab.git'
             }
         }
         stage('Build') {
