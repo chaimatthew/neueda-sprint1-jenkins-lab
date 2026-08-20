@@ -27,11 +27,18 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
             </plugin>
-	    <plugin>
-  		<groupId>org.jacoco</groupId>
-  		<artifactId>jacoco-maven-plugin</artifactId>
-  		<version>0.8.16-SNAPSHOT</version>
-	    </plugin>
         </plugins>
     </build>
+
+    <test>
+	<plugins>
+	    <plugin>
+		<groupId>org.jacoco</groupId>
+		<artifactId>jacoco-maven-plugin</artifactId>
+		<version>0.8.16-SNAPSHOT</version>
+	    </plugin>
+	</plugins>
+    </test>
+
+
 </project>
